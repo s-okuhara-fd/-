@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.managerpage{
+	font-size: 10px;
+	text-align: right;
+	margin-top: 50px;
+	padding-right: 50px;
+	text-decoration: none;
+	color: silver;
+}
+
+.login,
+.user-account,
+.user-reset{
+	margin-top: 70px;
+	line-height: 0px;
+}
+
+h1{
+	text-align: center;
+	font-size: 18px;
+}
+
+.form{
+	text-align: center;
+	/* margin-top: 30px; */
+  line-height: 50px;
+	height: 2.4em;
+  width: 100%;
+}
+
+.m-form-text:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
+
+.link{
+	font-size: 10px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 200px;
+	line-height: 30px;
+	color: silver;
+}
+
+a{
+	color: silver;
+}
+
+a:hover{
+	filter: brightness(80%);
+}
+
+button:hover,
+.company-list input:hover,
+.search input:hover{
+	filter: brightness(80%);
+}
+
+a:visited {
+	color:silver;
+}
+
+.btn{
+	margin-top: 30px;
+}
+
+button{
+	width: 200px;
+	height: 50px;
+	background-color: #000;
+	color: #ffffff
+}
+
+input{
+	resize: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px 2.5px;
+  border-radius: 8px;
+  border: 1px solid silver;
+	/* margin-top: 20px; */
+}
+
+/* 会社情報登録ページ */
+.company,
+.complete,
+.delete{
+	margin: 100px 0px;
+}
+
+.company-p{
+	margin: 100px auto;
+	width: 50%;
+	border: 1px solid #52c2d0;
+}
+
+.company-p p,
+.complete a,
+.delete a{
+	text-align: center;
+	padding: 30px;
+	font-size: 12px;
+}
+
+.edit-form h1,
+.top,
+.edit h1{
+	padding: 30px 0px;
+}
+
+.company-form,
+.edit-form label,
+.update,
+.user-confirm{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.updatebtn,
+.confirm-btn{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.user-confirm{
+	margin-bottom: 50px;
+}
+
+.company-form label,
+.edit-form label,
+.answer-top label{
+	width: 50%;
+	display: block;
+	margin: auto;
+	padding: 10px 0px;
+	background-color: #52c2d0;
+	text-align: left;
+	padding-left: 20px;
+	color: white;
+	font-size: 12px;
+}
+
+.edit-form input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.company-form  input,
+.edit-form input{
+	width: 50%;
+	margin-bottom: 50px;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* 更新ページ */
+.update p,
+.confirm-contents p{
+	width: 50%;
+	text-align: center;
+	margin: 30px auto;
+	font-size: 12px;
+	border: 1px solid #52c2d0;
+	padding: 20px 0px;
+}
+
+.answer p{
+	text-align: left;
+	margin: 0px auto;
+	padding: 20px ;
+	font-size: 15px;
+	border: none;
+}
+
+/* 登録情報ページ */
+.dbc,
+.kaisha,
+.company-detail,
+.update,
+.search-all{
+	margin: 50px 0px;
+}
+
+.dbc table,
+.company-list,
+.detail,
+.search{
+  width: 70%;
+	margin: 50px auto;
+  border-collapse: collapse;
+}
+
+.company-list table,
+.search table{
+	width: 100%;
+}
+
+.dbc table tr,
+.company-list table tr,
+.company-detail table tr,
+.search table tr{
+  border-bottom: solid 2px white;
+}
+
+.dbc table th,
+.company-list table th,
+.detail th,
+.search table th{
+  text-align: left;
+	width: 20%;
+  background-color: #52c2d0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dbc table td,
+.company-list table td,
+.detail td,
+.search table td{
+	width: 60%;
+  text-align: center;
+  background-color: #eee;
+}
+
+.company-list input,
+.search input{
+  width: 70px;
+  border: none;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+
+.search-box form{
+	display: flex;
+	margin-top: 20px;
+	width: 30%;
+	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search-box input[type="text"]{
+	width: 100%;
+}
+
+input[type="image"]{
+	width: 10%;
+	height: 10%;
+	border: none;
+}
+
+.search-box input[type="image"]:active{
+	filter: brightness(80%);
+}
+
+/* .status p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border-bottom: solid 2px #52c2d0;
+	color: #52c2d0;
+	text-align: center;
+	padding: 10px;
+} */
+
+.detailbtn form,
+.editbtn{
+	margin-left: auto;
+	margin-right: auto;
+	width: 30.5%;
+	text-align: center;
+}
+
+
+/* .kousinbtn{
+	float: left;
+	justify-content: space-between;
+	padding-right: 10px;
+} */
+
+.user-confirm p{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ページング */
+.paging{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.paging a,
+.paging p{
+	text-align: center;
+}
+
+.paging a{
+	letter-spacing: 5px;
+}
+
+.paging p{
+	margin-top: 20px;
+}
+
+/*modal*/
+
+/* #mask{
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  display: none;
+}
+
+#modal{
+	display: block;
+  background: #fff;
+  color: #555;
+  width: 30%;
+	height: 30%;
+  border-radius: 10px;
+  position: absolute;
+  top: 1200px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 999;
+	animation: anime1 0.2s ease;
+}
+
+.statusarea{
+	margin-top: 40px;
+}
+
+
+@keyframes anime1 {
+  0% {
+    opacity:  0;
+		top: 100px;
+    }
+  100% {
+    opacity:  1;
+    top: 50px;
+  }
+}
+
+
+.statuslist {
+	overflow: hidden;
+	width: 90%;
+	margin: 2em auto;
+	text-align: center;
+}
+.statuslist select {
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.statuslist select::-ms-expand {
+  display: none;
+}
+.statuslist {
+	position: relative;
+	border: 2px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.statuslist::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.statuslist select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+} */
+
+.register,
+.reset{
+	margin-top: 20%;
+	line-height: 50px;
+}
+
+span{
+	color: red;
+	font-size: 8px;
+	text-align: center;
+}
+
+.form input{
+	margin-top: 10px;
+}
+
+.link{
+	margin-top: 350px;
+}
+
+.company-form label,
+.edit-form label{
+	margin-bottom: 10px;
+}
+
+.newform{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.newform input{
+	margin-top: 10px;
+}
+
+.user-account h1,
+.user-reset h1{
+	margin-bottom:50px;
+}
+
+.editbtn form{
+	text-align: center;
+}
