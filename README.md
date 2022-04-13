@@ -10,7 +10,7 @@
 ユーザーID：123456</br>
 PASSWORD：123456
 ## 環境
-MAMP/MySQL/PHP
+XAMPP/MySQL/PHP
 ## データベース
 データベース名：company</br>
 テーブル：お使いのphpMyAdminに上のデータベースを作り、入っているDB.sqlをインポートしていただければお使いいただけるようになると思います。
